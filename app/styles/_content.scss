@@ -1,0 +1,38 @@
+
+body {
+    color: green;
+}
+
+// .container .header {
+//     a {
+//         &:link, &:active {
+//             color: $brand-primary;
+//         }
+//         &:visted {
+//           color: gray;
+//         }
+//         &:hover {
+//             color: green;
+//         }
+//     }
+// }
+
+.marketing {
+    h4 {
+        color: $brand-warning;
+    }
+    p {
+        color: $brand-primary;
+    }
+}
+
+.container .jumbotron {
+    @include border-top-radius(50px);
+    @include border-bottom-radius(50px);
+}
+
+.btn {
+  &:hover {
+      @include animation('slide-down 5s 3');
+    }
+}
