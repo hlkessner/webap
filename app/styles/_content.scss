@@ -3,22 +3,19 @@ body {
     color: green;
 }
 
-// .container .header {
-//     a {
-//         &:link, &:active {
-//             color: $brand-primary;
-//         }
-//         &:visted {
-//           color: gray;
-//         }
-//         &:hover {
-//             color: green;
-//         }
-//     }
-// }
+.header {
+    a {
+        &:link, &:active, &:visited {
+            color: red;
+        }
+        &:hover {
+            color: green;
+        }
+    }
+}
 
 .marketing {
-    h4 {
+    h4 a {
         color: $brand-warning;
     }
     p {
@@ -29,10 +26,4 @@ body {
 .container .jumbotron {
     @include border-top-radius(50px);
     @include border-bottom-radius(50px);
-}
-
-.btn {
-  &:hover {
-      @include animation('slide-down 5s 3');
-    }
 }
